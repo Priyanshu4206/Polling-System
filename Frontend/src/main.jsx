@@ -5,7 +5,6 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, N
 import { AuthContext, AuthProvider } from "./context/AuthContext.jsx";
 import App from './App';
 import 'react-toastify/dist/ReactToastify.css';
-import './index.css';
 import PrivateRoute from './layouts/PrivateRoute.jsx';
 import RoleBasedRoute from './layouts/RoleBasedRoute.jsx';
 
