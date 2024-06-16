@@ -1,0 +1,109 @@
+.polls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #111119;
+    padding: 3%;
+    color: #fff;
+}
+
+.polls-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.poll-card {
+    background-color: #1e1e28;
+    padding: 20px;
+    border: 2px solid #2ecc71;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.6);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.poll-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.8);
+    cursor: pointer;
+}
+
+.poll-header {
+    margin-bottom: 10px;
+}
+
+.poll-created-by {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 18px;
+    margin-top: 2rem;
+}
+
+.create-poll-container {
+    width: 100%;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.05);
+    color: grey;
+}
+
+.create-poll-form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+.input-container input,
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

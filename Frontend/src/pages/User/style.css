@@ -1,0 +1,18 @@
+.user-profile-container {
+    color: grey;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.fluid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.fluid-container button {
+    flex: 1;
+    min-width: 150px;
+}
